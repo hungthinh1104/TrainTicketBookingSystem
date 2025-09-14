@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TrainTicketBookingSystem.Infrastructure/1.0.0": {
+        "dependencies": {
+          "TrainTicketBookingSystem.Application": "1.0.0",
+          "TrainTicketBookingSystem.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TrainTicketBookingSystem.Infrastructure.dll": {}
+        }
+      },
+      "TrainTicketBookingSystem.Application/1.0.0": {
+        "dependencies": {
+          "TrainTicketBookingSystem.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TrainTicketBookingSystem.Application.dll": {}
+        }
+      },
+      "TrainTicketBookingSystem.Domain/1.0.0": {
+        "runtime": {
+          "TrainTicketBookingSystem.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrainTicketBookingSystem.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrainTicketBookingSystem.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrainTicketBookingSystem.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

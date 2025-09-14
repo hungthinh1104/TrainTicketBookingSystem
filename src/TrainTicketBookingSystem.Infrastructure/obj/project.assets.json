@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "TrainTicketBookingSystem.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "TrainTicketBookingSystem.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TrainTicketBookingSystem.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrainTicketBookingSystem.Application.dll": {}
+        }
+      },
+      "TrainTicketBookingSystem.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TrainTicketBookingSystem.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrainTicketBookingSystem.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrainTicketBookingSystem.Application/1.0.0": {
+      "type": "project",
+      "path": "../TrainTicketBookingSystem.Application/TrainTicketBookingSystem.Application.csproj",
+      "msbuildProject": "../TrainTicketBookingSystem.Application/TrainTicketBookingSystem.Application.csproj"
+    },
+    "TrainTicketBookingSystem.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TrainTicketBookingSystem.Domain/TrainTicketBookingSystem.Domain.csproj",
+      "msbuildProject": "../TrainTicketBookingSystem.Domain/TrainTicketBookingSystem.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "TrainTicketBookingSystem.Application >= 1.0.0",
+      "TrainTicketBookingSystem.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/runner/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Infrastructure/TrainTicketBookingSystem.Infrastructure.csproj",
+      "projectName": "TrainTicketBookingSystem.Infrastructure",
+      "projectPath": "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Infrastructure/TrainTicketBookingSystem.Infrastructure.csproj",
+      "packagesPath": "/home/runner/.nuget/packages/",
+      "outputPath": "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Infrastructure/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/runner/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Application/TrainTicketBookingSystem.Application.csproj": {
+              "projectPath": "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Application/TrainTicketBookingSystem.Application.csproj"
+            },
+            "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Domain/TrainTicketBookingSystem.Domain.csproj": {
+              "projectPath": "/home/runner/work/TrainTicketBookingSystem/TrainTicketBookingSystem/src/TrainTicketBookingSystem.Domain/TrainTicketBookingSystem.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
