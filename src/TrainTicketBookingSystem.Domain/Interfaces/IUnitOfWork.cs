@@ -10,6 +10,8 @@ public interface IUnitOfWork : IDisposable
     IBookingRepository Bookings { get; }
     IPaymentRepository Payments { get; }
     ISeatRepository Seats { get; }
+    IPassengerRepository Passengers { get; }
+    IBookingSeatRepository BookingSeats { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     Task BeginTransactionAsync(CancellationToken cancellationToken = default);

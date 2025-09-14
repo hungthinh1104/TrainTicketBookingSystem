@@ -49,3 +49,14 @@ public interface ISeatRepository : IRepository<Seat>
     Task<IEnumerable<Seat>> GetByTrainIdAsync(int trainId, CancellationToken cancellationToken = default);
     Task<IEnumerable<Seat>> GetAvailableSeatsAsync(int scheduleId, CancellationToken cancellationToken = default);
 }
+
+public interface IPassengerRepository : IRepository<Passenger>
+{
+    Task<IEnumerable<Passenger>> GetByBookingIdAsync(int bookingId, CancellationToken cancellationToken = default);
+}
+
+public interface IBookingSeatRepository : IRepository<BookingSeat>
+{
+    Task<IEnumerable<BookingSeat>> GetByBookingIdAsync(int bookingId, CancellationToken cancellationToken = default);
+    Task<IEnumerable<BookingSeat>> GetByScheduleIdAsync(int scheduleId, CancellationToken cancellationToken = default);
+}
